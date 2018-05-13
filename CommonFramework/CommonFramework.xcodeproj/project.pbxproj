@@ -13,6 +13,10 @@
 		29645C1520A849780099CEAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29645C1420A849780099CEAB /* Assets.xcassets */; };
 		29645C1820A849780099CEAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29645C1620A849780099CEAB /* LaunchScreen.storyboard */; };
 		29645C1B20A849780099CEAB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29645C1A20A849780099CEAB /* main.m */; };
+		29645C2620A84CC50099CEAB /* UIColor+ZYXColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 29645C2520A84CC50099CEAB /* UIColor+ZYXColor.m */; };
+		29B0ADB120A85473003D1C0B /* UIButton+ZYXButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B0ADB020A85473003D1C0B /* UIButton+ZYXButton.m */; };
+		29B0ADB420A855A7003D1C0B /* NSObject+ZYXObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B0ADB320A855A7003D1C0B /* NSObject+ZYXObject.m */; };
+		29B0ADB720A85699003D1C0B /* UIImage+ZYXImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B0ADB620A85699003D1C0B /* UIImage+ZYXImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,16 @@
 		29645C1720A849780099CEAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29645C1920A849780099CEAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29645C1A20A849780099CEAB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29645C2320A84B7E0099CEAB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		29645C2420A84CC50099CEAB /* UIColor+ZYXColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+ZYXColor.h"; sourceTree = "<group>"; };
+		29645C2520A84CC50099CEAB /* UIColor+ZYXColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ZYXColor.m"; sourceTree = "<group>"; };
+		29B0ADAD20A84D92003D1C0B /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		29B0ADAF20A85473003D1C0B /* UIButton+ZYXButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+ZYXButton.h"; sourceTree = "<group>"; };
+		29B0ADB020A85473003D1C0B /* UIButton+ZYXButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ZYXButton.m"; sourceTree = "<group>"; };
+		29B0ADB220A855A7003D1C0B /* NSObject+ZYXObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZYXObject.h"; sourceTree = "<group>"; };
+		29B0ADB320A855A7003D1C0B /* NSObject+ZYXObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZYXObject.m"; sourceTree = "<group>"; };
+		29B0ADB520A85699003D1C0B /* UIImage+ZYXImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZYXImage.h"; sourceTree = "<group>"; };
+		29B0ADB620A85699003D1C0B /* UIImage+ZYXImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZYXImage.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +72,43 @@
 		29645C0A20A849770099CEAB /* CommonFramework */ = {
 			isa = PBXGroup;
 			children = (
+				29645C2720A84CD70099CEAB /* Others */,
 				29645C0B20A849770099CEAB /* AppDelegate.h */,
 				29645C0C20A849770099CEAB /* AppDelegate.m */,
 				29645C0E20A849770099CEAB /* ViewController.h */,
 				29645C0F20A849770099CEAB /* ViewController.m */,
+				29645C2120A84AC20099CEAB /* OC */,
+			);
+			path = CommonFramework;
+			sourceTree = "<group>";
+		};
+		29645C2120A84AC20099CEAB /* OC */ = {
+			isa = PBXGroup;
+			children = (
+				29645C2420A84CC50099CEAB /* UIColor+ZYXColor.h */,
+				29645C2520A84CC50099CEAB /* UIColor+ZYXColor.m */,
+				29B0ADAF20A85473003D1C0B /* UIButton+ZYXButton.h */,
+				29B0ADB020A85473003D1C0B /* UIButton+ZYXButton.m */,
+				29B0ADB520A85699003D1C0B /* UIImage+ZYXImage.h */,
+				29B0ADB620A85699003D1C0B /* UIImage+ZYXImage.m */,
+				29B0ADB220A855A7003D1C0B /* NSObject+ZYXObject.h */,
+				29B0ADB320A855A7003D1C0B /* NSObject+ZYXObject.m */,
+			);
+			path = OC;
+			sourceTree = "<group>";
+		};
+		29645C2720A84CD70099CEAB /* Others */ = {
+			isa = PBXGroup;
+			children = (
 				29645C1120A849770099CEAB /* Main.storyboard */,
 				29645C1420A849780099CEAB /* Assets.xcassets */,
 				29645C1620A849780099CEAB /* LaunchScreen.storyboard */,
 				29645C1920A849780099CEAB /* Info.plist */,
 				29645C1A20A849780099CEAB /* main.m */,
+				29645C2320A84B7E0099CEAB /* PrefixHeader.pch */,
+				29B0ADAD20A84D92003D1C0B /* Header.h */,
 			);
-			path = CommonFramework;
+			name = Others;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +181,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29B0ADB420A855A7003D1C0B /* NSObject+ZYXObject.m in Sources */,
 				29645C1020A849770099CEAB /* ViewController.m in Sources */,
 				29645C1B20A849780099CEAB /* main.m in Sources */,
 				29645C0D20A849770099CEAB /* AppDelegate.m in Sources */,
+				29B0ADB120A85473003D1C0B /* UIButton+ZYXButton.m in Sources */,
+				29645C2620A84CC50099CEAB /* UIColor+ZYXColor.m in Sources */,
+				29B0ADB720A85699003D1C0B /* UIImage+ZYXImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +328,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = $SRCROOT/CommonFramework/PrefixHeader.pch;
 				INFOPLIST_FILE = CommonFramework/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -301,6 +347,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = $SRCROOT/CommonFramework/PrefixHeader.pch;
 				INFOPLIST_FILE = CommonFramework/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
