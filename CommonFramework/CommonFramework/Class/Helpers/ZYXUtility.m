@@ -28,4 +28,19 @@
     }
     [viewConroller presentViewController:alert animated:YES completion:nil];
 }
+// 判断是否为空
++ (BOOL)judgeNil:(id)value {
+    if ([value isKindOfClass:[NSString class]]) {
+        value = [value stringByReplacingOccurrencesOfString:@" " withString:@""];
+        if (([value rangeOfString:@"null"].length != 0 && [value length]<7) || [value isEqual:@""] || [value length] == 0) {
+            return YES;
+        }
+    }
+    if (value == nil || [value isEqual:[NSNull null]])
+    return YES;
+    else if (([value isKindOfClass:[NSArray class]] || [value isKindOfClass:[NSDictionary class]]) && [value count] == 0)
+    return YES;
+    else
+    return NO;
+}
 @end

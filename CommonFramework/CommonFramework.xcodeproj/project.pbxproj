@@ -16,6 +16,8 @@
 		2958768920A97A72007FBD3D /* NetworkingTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 2958768820A97A71007FBD3D /* NetworkingTools.m */; };
 		2958768C20A97C51007FBD3D /* NSDate+ZYXDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2958768A20A97C50007FBD3D /* NSDate+ZYXDate.m */; };
 		2958768F20A97CB0007FBD3D /* ZYXUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2958768D20A97CB0007FBD3D /* ZYXUtility.m */; };
+		2958769320A985E7007FBD3D /* ZYXBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2958769220A985E7007FBD3D /* ZYXBaseModel.m */; };
+		2958769620A993AB007FBD3D /* ZYXTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2958769520A993AB007FBD3D /* ZYXTestModel.m */; };
 		29645C0D20A849770099CEAB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29645C0C20A849770099CEAB /* AppDelegate.m */; };
 		29645C1020A849770099CEAB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29645C0F20A849770099CEAB /* ViewController.m */; };
 		29645C1320A849770099CEAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29645C1120A849770099CEAB /* Main.storyboard */; };
@@ -47,6 +49,10 @@
 		2958768B20A97C50007FBD3D /* NSDate+ZYXDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ZYXDate.h"; sourceTree = "<group>"; };
 		2958768D20A97CB0007FBD3D /* ZYXUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYXUtility.m; sourceTree = "<group>"; };
 		2958768E20A97CB0007FBD3D /* ZYXUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYXUtility.h; sourceTree = "<group>"; };
+		2958769120A985E7007FBD3D /* ZYXBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYXBaseModel.h; sourceTree = "<group>"; };
+		2958769220A985E7007FBD3D /* ZYXBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYXBaseModel.m; sourceTree = "<group>"; };
+		2958769420A993AB007FBD3D /* ZYXTestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYXTestModel.h; sourceTree = "<group>"; };
+		2958769520A993AB007FBD3D /* ZYXTestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYXTestModel.m; sourceTree = "<group>"; };
 		29645C0820A849770099CEAB /* CommonFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommonFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29645C0B20A849770099CEAB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		29645C0C20A849770099CEAB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -131,6 +137,7 @@
 		294D71AD20A91C36003214D5 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				2958769020A985C1007FBD3D /* Model */,
 				29645C0E20A849770099CEAB /* ViewController.h */,
 				29645C0F20A849770099CEAB /* ViewController.m */,
 			);
@@ -180,6 +187,17 @@
 				294D71B720A91D72003214D5 /* SCAdView.m */,
 			);
 			path = SCAdView;
+			sourceTree = "<group>";
+		};
+		2958769020A985C1007FBD3D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2958769120A985E7007FBD3D /* ZYXBaseModel.h */,
+				2958769220A985E7007FBD3D /* ZYXBaseModel.m */,
+				2958769420A993AB007FBD3D /* ZYXTestModel.h */,
+				2958769520A993AB007FBD3D /* ZYXTestModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		29645BFF20A849770099CEAB = {
@@ -362,6 +380,7 @@
 				294D71B920A91D72003214D5 /* SCAdView.m in Sources */,
 				29645C1020A849770099CEAB /* ViewController.m in Sources */,
 				29645C1B20A849780099CEAB /* main.m in Sources */,
+				2958769620A993AB007FBD3D /* ZYXTestModel.m in Sources */,
 				29645C0D20A849770099CEAB /* AppDelegate.m in Sources */,
 				2958768F20A97CB0007FBD3D /* ZYXUtility.m in Sources */,
 				29B0ADB120A85473003D1C0B /* UIButton+ZYXButton.m in Sources */,
@@ -372,6 +391,7 @@
 				2958768C20A97C51007FBD3D /* NSDate+ZYXDate.m in Sources */,
 				29645C2620A84CC50099CEAB /* UIColor+ZYXColor.m in Sources */,
 				29B0ADB720A85699003D1C0B /* UIImage+ZYXImage.m in Sources */,
+				2958769320A985E7007FBD3D /* ZYXBaseModel.m in Sources */,
 				2958768120A9799C007FBD3D /* UIColor-Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

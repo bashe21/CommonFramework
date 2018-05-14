@@ -12,5 +12,6 @@
 @interface ZYXUtility : NSObject
 + (instancetype)shareInstance;
 - (void)showAlertViewWith:(UIViewController *)viewConroller title:(NSString *)title plainAction:(UIAlertAction *)plainAction cancelAction:(UIAlertAction *)cancelAction ;
++ (BOOL)judgeNil:(id)value;
 
 @end
