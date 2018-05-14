@@ -10,6 +10,10 @@
 		294D71B820A91D72003214D5 /* SCAdCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 294D71B320A91D72003214D5 /* SCAdCollectionViewLayout.m */; };
 		294D71B920A91D72003214D5 /* SCAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 294D71B720A91D72003214D5 /* SCAdView.m */; };
 		2958767E20A923C6007FBD3D /* NetworkingTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2958767D20A923C6007FBD3D /* NetworkingTool.swift */; };
+		2958768120A9799C007FBD3D /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2958767F20A9799B007FBD3D /* UIColor-Extension.swift */; };
+		2958768220A9799C007FBD3D /* UIButton-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2958768020A9799C007FBD3D /* UIButton-Extension.swift */; };
+		2958768520A979BB007FBD3D /* UILabel+ZYXLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2958768420A979BB007FBD3D /* UILabel+ZYXLabel.m */; };
+		2958768920A97A72007FBD3D /* NetworkingTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 2958768820A97A71007FBD3D /* NetworkingTools.m */; };
 		29645C0D20A849770099CEAB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29645C0C20A849770099CEAB /* AppDelegate.m */; };
 		29645C1020A849770099CEAB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29645C0F20A849770099CEAB /* ViewController.m */; };
 		29645C1320A849770099CEAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29645C1120A849770099CEAB /* Main.storyboard */; };
@@ -31,6 +35,12 @@
 		294D71B720A91D72003214D5 /* SCAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAdView.m; sourceTree = "<group>"; };
 		294D71BA20A91E5D003214D5 /* CommonFramework-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CommonFramework-Bridging-Header.h"; sourceTree = "<group>"; };
 		2958767D20A923C6007FBD3D /* NetworkingTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingTool.swift; sourceTree = "<group>"; };
+		2958767F20A9799B007FBD3D /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
+		2958768020A9799C007FBD3D /* UIButton-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton-Extension.swift"; sourceTree = "<group>"; };
+		2958768320A979BB007FBD3D /* UILabel+ZYXLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+ZYXLabel.h"; sourceTree = "<group>"; };
+		2958768420A979BB007FBD3D /* UILabel+ZYXLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+ZYXLabel.m"; sourceTree = "<group>"; };
+		2958768720A97A71007FBD3D /* NetworkingTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkingTools.h; sourceTree = "<group>"; };
+		2958768820A97A71007FBD3D /* NetworkingTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkingTools.m; sourceTree = "<group>"; };
 		29645C0820A849770099CEAB /* CommonFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommonFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29645C0B20A849770099CEAB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		29645C0C20A849770099CEAB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -95,11 +105,17 @@
 				29645C2520A84CC50099CEAB /* UIColor+ZYXColor.m */,
 				29B0ADAF20A85473003D1C0B /* UIButton+ZYXButton.h */,
 				29B0ADB020A85473003D1C0B /* UIButton+ZYXButton.m */,
+				2958768320A979BB007FBD3D /* UILabel+ZYXLabel.h */,
+				2958768420A979BB007FBD3D /* UILabel+ZYXLabel.m */,
 				29B0ADB520A85699003D1C0B /* UIImage+ZYXImage.h */,
 				29B0ADB620A85699003D1C0B /* UIImage+ZYXImage.m */,
 				29B0ADB220A855A7003D1C0B /* NSObject+ZYXObject.h */,
 				29B0ADB320A855A7003D1C0B /* NSObject+ZYXObject.m */,
+				2958768720A97A71007FBD3D /* NetworkingTools.h */,
+				2958768820A97A71007FBD3D /* NetworkingTools.m */,
 				2958767D20A923C6007FBD3D /* NetworkingTool.swift */,
+				2958768020A9799C007FBD3D /* UIButton-Extension.swift */,
+				2958767F20A9799B007FBD3D /* UIColor-Extension.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -332,15 +348,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				29B0ADB420A855A7003D1C0B /* NSObject+ZYXObject.m in Sources */,
+				2958768920A97A72007FBD3D /* NetworkingTools.m in Sources */,
 				294D71B920A91D72003214D5 /* SCAdView.m in Sources */,
 				29645C1020A849770099CEAB /* ViewController.m in Sources */,
 				29645C1B20A849780099CEAB /* main.m in Sources */,
 				29645C0D20A849770099CEAB /* AppDelegate.m in Sources */,
 				29B0ADB120A85473003D1C0B /* UIButton+ZYXButton.m in Sources */,
+				2958768520A979BB007FBD3D /* UILabel+ZYXLabel.m in Sources */,
 				294D71B820A91D72003214D5 /* SCAdCollectionViewLayout.m in Sources */,
+				2958768220A9799C007FBD3D /* UIButton-Extension.swift in Sources */,
 				2958767E20A923C6007FBD3D /* NetworkingTool.swift in Sources */,
 				29645C2620A84CC50099CEAB /* UIColor+ZYXColor.m in Sources */,
 				29B0ADB720A85699003D1C0B /* UIImage+ZYXImage.m in Sources */,
+				2958768120A9799C007FBD3D /* UIColor-Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,7 +512,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "CommonFramework/CommonFramework-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -512,7 +532,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zyx.CommonFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "CommonFramework/CommonFramework-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
