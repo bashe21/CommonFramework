@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		294D71B820A91D72003214D5 /* SCAdCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 294D71B320A91D72003214D5 /* SCAdCollectionViewLayout.m */; };
+		294D71B920A91D72003214D5 /* SCAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 294D71B720A91D72003214D5 /* SCAdView.m */; };
 		29645C0D20A849770099CEAB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29645C0C20A849770099CEAB /* AppDelegate.m */; };
 		29645C1020A849770099CEAB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29645C0F20A849770099CEAB /* ViewController.m */; };
 		29645C1320A849770099CEAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29645C1120A849770099CEAB /* Main.storyboard */; };
@@ -20,6 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		294D71B320A91D72003214D5 /* SCAdCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAdCollectionViewLayout.m; sourceTree = "<group>"; };
+		294D71B420A91D72003214D5 /* SCAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAdView.h; sourceTree = "<group>"; };
+		294D71B520A91D72003214D5 /* SCAdViewRenderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAdViewRenderDelegate.h; sourceTree = "<group>"; };
+		294D71B620A91D72003214D5 /* SCAdCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAdCollectionViewLayout.h; sourceTree = "<group>"; };
+		294D71B720A91D72003214D5 /* SCAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAdView.m; sourceTree = "<group>"; };
+		294D71BA20A91E5D003214D5 /* CommonFramework-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CommonFramework-Bridging-Header.h"; sourceTree = "<group>"; };
 		29645C0820A849770099CEAB /* CommonFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommonFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29645C0B20A849770099CEAB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		29645C0C20A849770099CEAB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -53,6 +61,85 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		294D71AB20A91BB0003214D5 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				294D71AD20A91C36003214D5 /* Features */,
+				294D71B020A91C68003214D5 /* Resouces */,
+				294D71AF20A91C5D003214D5 /* Helpers */,
+				294D71AE20A91C4F003214D5 /* Vendors */,
+				294D71AC20A91C2A003214D5 /* Categories */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		294D71AC20A91C2A003214D5 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				29645C2420A84CC50099CEAB /* UIColor+ZYXColor.h */,
+				29645C2520A84CC50099CEAB /* UIColor+ZYXColor.m */,
+				29B0ADAF20A85473003D1C0B /* UIButton+ZYXButton.h */,
+				29B0ADB020A85473003D1C0B /* UIButton+ZYXButton.m */,
+				29B0ADB520A85699003D1C0B /* UIImage+ZYXImage.h */,
+				29B0ADB620A85699003D1C0B /* UIImage+ZYXImage.m */,
+				29B0ADB220A855A7003D1C0B /* NSObject+ZYXObject.h */,
+				29B0ADB320A855A7003D1C0B /* NSObject+ZYXObject.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		294D71AD20A91C36003214D5 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				29645C0E20A849770099CEAB /* ViewController.h */,
+				29645C0F20A849770099CEAB /* ViewController.m */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		294D71AE20A91C4F003214D5 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				294D71B220A91D72003214D5 /* SCAdView */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		294D71AF20A91C5D003214D5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		294D71B020A91C68003214D5 /* Resouces */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resouces;
+			sourceTree = "<group>";
+		};
+		294D71B120A91C92003214D5 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				29645C0B20A849770099CEAB /* AppDelegate.h */,
+				29645C0C20A849770099CEAB /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		294D71B220A91D72003214D5 /* SCAdView */ = {
+			isa = PBXGroup;
+			children = (
+				294D71B320A91D72003214D5 /* SCAdCollectionViewLayout.m */,
+				294D71B420A91D72003214D5 /* SCAdView.h */,
+				294D71B520A91D72003214D5 /* SCAdViewRenderDelegate.h */,
+				294D71B620A91D72003214D5 /* SCAdCollectionViewLayout.h */,
+				294D71B720A91D72003214D5 /* SCAdView.m */,
+			);
+			path = SCAdView;
+			sourceTree = "<group>";
+		};
 		29645BFF20A849770099CEAB = {
 			isa = PBXGroup;
 			children = (
@@ -72,29 +159,11 @@
 		29645C0A20A849770099CEAB /* CommonFramework */ = {
 			isa = PBXGroup;
 			children = (
+				294D71B120A91C92003214D5 /* AppDelegate */,
+				294D71AB20A91BB0003214D5 /* Class */,
 				29645C2720A84CD70099CEAB /* Others */,
-				29645C0B20A849770099CEAB /* AppDelegate.h */,
-				29645C0C20A849770099CEAB /* AppDelegate.m */,
-				29645C0E20A849770099CEAB /* ViewController.h */,
-				29645C0F20A849770099CEAB /* ViewController.m */,
-				29645C2120A84AC20099CEAB /* OC */,
 			);
 			path = CommonFramework;
-			sourceTree = "<group>";
-		};
-		29645C2120A84AC20099CEAB /* OC */ = {
-			isa = PBXGroup;
-			children = (
-				29645C2420A84CC50099CEAB /* UIColor+ZYXColor.h */,
-				29645C2520A84CC50099CEAB /* UIColor+ZYXColor.m */,
-				29B0ADAF20A85473003D1C0B /* UIButton+ZYXButton.h */,
-				29B0ADB020A85473003D1C0B /* UIButton+ZYXButton.m */,
-				29B0ADB520A85699003D1C0B /* UIImage+ZYXImage.h */,
-				29B0ADB620A85699003D1C0B /* UIImage+ZYXImage.m */,
-				29B0ADB220A855A7003D1C0B /* NSObject+ZYXObject.h */,
-				29B0ADB320A855A7003D1C0B /* NSObject+ZYXObject.m */,
-			);
-			path = OC;
 			sourceTree = "<group>";
 		};
 		29645C2720A84CD70099CEAB /* Others */ = {
@@ -107,6 +176,7 @@
 				29645C1A20A849780099CEAB /* main.m */,
 				29645C2320A84B7E0099CEAB /* PrefixHeader.pch */,
 				29B0ADAD20A84D92003D1C0B /* Header.h */,
+				294D71BA20A91E5D003214D5 /* CommonFramework-Bridging-Header.h */,
 			);
 			name = Others;
 			sourceTree = "<group>";
@@ -142,6 +212,7 @@
 				TargetAttributes = {
 					29645C0720A849770099CEAB = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 				};
 			};
@@ -182,10 +253,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				29B0ADB420A855A7003D1C0B /* NSObject+ZYXObject.m in Sources */,
+				294D71B920A91D72003214D5 /* SCAdView.m in Sources */,
 				29645C1020A849770099CEAB /* ViewController.m in Sources */,
 				29645C1B20A849780099CEAB /* main.m in Sources */,
 				29645C0D20A849770099CEAB /* AppDelegate.m in Sources */,
 				29B0ADB120A85473003D1C0B /* UIButton+ZYXButton.m in Sources */,
+				294D71B820A91D72003214D5 /* SCAdCollectionViewLayout.m in Sources */,
 				29645C2620A84CC50099CEAB /* UIColor+ZYXColor.m in Sources */,
 				29B0ADB720A85699003D1C0B /* UIImage+ZYXImage.m in Sources */,
 			);
@@ -327,6 +400,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = $SRCROOT/CommonFramework/PrefixHeader.pch;
@@ -338,6 +412,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zyx.CommonFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CommonFramework/CommonFramework-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -346,6 +423,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = $SRCROOT/CommonFramework/PrefixHeader.pch;
@@ -357,6 +435,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zyx.CommonFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CommonFramework/CommonFramework-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

@@ -12,5 +12,8 @@
 #import "UIColor+ZYXColor.h"
 #import "UIButton+ZYXButton.h"
 #import "NSObject+ZYXObject.h"
+#import "AppDelegate.h"
+
+#define APPDELEGATE ((AppDelegate *)[UIApplication sharedApplication].delegate)
 
 #endif /* Header_h */

@@ -10,14 +10,14 @@
 
 @implementation NSObject (ZYXObject)
 + (UIViewController *)currentViewController {
-    UIViewController *VC = APPDELEGATE.window.rootViewController;
-    if ([VC isKindOfClass:[UITabBarController class]]) {
-        UITabBarController *tabBarController = (UITabBarController *)VC;
+    UIViewController *currentVc = APPDELEGATE.window.rootViewController;
+    if ([currentVc isKindOfClass:[UITabBarController class]]) {
+        UITabBarController *tabBarController = (UITabBarController *)currentVc;
         UINavigationController *nav = (UINavigationController *)tabBarController.selectedViewController;
         UIViewController * baseVC = (UIViewController *)nav.visibleViewController;
         return baseVC;
     } else{
-        return VC;
+        return currentVc;
     }
 }
 @end
