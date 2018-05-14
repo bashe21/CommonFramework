@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		294D71B820A91D72003214D5 /* SCAdCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 294D71B320A91D72003214D5 /* SCAdCollectionViewLayout.m */; };
 		294D71B920A91D72003214D5 /* SCAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 294D71B720A91D72003214D5 /* SCAdView.m */; };
+		2958767E20A923C6007FBD3D /* NetworkingTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2958767D20A923C6007FBD3D /* NetworkingTool.swift */; };
 		29645C0D20A849770099CEAB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29645C0C20A849770099CEAB /* AppDelegate.m */; };
 		29645C1020A849770099CEAB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29645C0F20A849770099CEAB /* ViewController.m */; };
 		29645C1320A849770099CEAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29645C1120A849770099CEAB /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 		29B0ADB120A85473003D1C0B /* UIButton+ZYXButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B0ADB020A85473003D1C0B /* UIButton+ZYXButton.m */; };
 		29B0ADB420A855A7003D1C0B /* NSObject+ZYXObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B0ADB320A855A7003D1C0B /* NSObject+ZYXObject.m */; };
 		29B0ADB720A85699003D1C0B /* UIImage+ZYXImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B0ADB620A85699003D1C0B /* UIImage+ZYXImage.m */; };
+		3D5768ECE608945B416E7BD0 /* Pods_CommonFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9591AED867AC4633B9E8A8A /* Pods_CommonFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,7 @@
 		294D71B620A91D72003214D5 /* SCAdCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAdCollectionViewLayout.h; sourceTree = "<group>"; };
 		294D71B720A91D72003214D5 /* SCAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAdView.m; sourceTree = "<group>"; };
 		294D71BA20A91E5D003214D5 /* CommonFramework-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CommonFramework-Bridging-Header.h"; sourceTree = "<group>"; };
+		2958767D20A923C6007FBD3D /* NetworkingTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingTool.swift; sourceTree = "<group>"; };
 		29645C0820A849770099CEAB /* CommonFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommonFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29645C0B20A849770099CEAB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		29645C0C20A849770099CEAB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -48,6 +51,9 @@
 		29B0ADB320A855A7003D1C0B /* NSObject+ZYXObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZYXObject.m"; sourceTree = "<group>"; };
 		29B0ADB520A85699003D1C0B /* UIImage+ZYXImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZYXImage.h"; sourceTree = "<group>"; };
 		29B0ADB620A85699003D1C0B /* UIImage+ZYXImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZYXImage.m"; sourceTree = "<group>"; };
+		5103E76B212E2AB0BA4D171C /* Pods-CommonFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-CommonFramework/Pods-CommonFramework.release.xcconfig"; sourceTree = "<group>"; };
+		D9591AED867AC4633B9E8A8A /* Pods_CommonFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9D456608EF64C5A44E13EE3 /* Pods-CommonFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CommonFramework/Pods-CommonFramework.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,12 +61,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D5768ECE608945B416E7BD0 /* Pods_CommonFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CCAD1D710C9E38B77A7AAAF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9591AED867AC4633B9E8A8A /* Pods_CommonFramework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		294D71AB20A91BB0003214D5 /* Class */ = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +99,7 @@
 				29B0ADB620A85699003D1C0B /* UIImage+ZYXImage.m */,
 				29B0ADB220A855A7003D1C0B /* NSObject+ZYXObject.h */,
 				29B0ADB320A855A7003D1C0B /* NSObject+ZYXObject.m */,
+				2958767D20A923C6007FBD3D /* NetworkingTool.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -145,6 +161,8 @@
 			children = (
 				29645C0A20A849770099CEAB /* CommonFramework */,
 				29645C0920A849770099CEAB /* Products */,
+				E59E229A5EE7FC6826734CD6 /* Pods */,
+				1CCAD1D710C9E38B77A7AAAF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -181,6 +199,15 @@
 			name = Others;
 			sourceTree = "<group>";
 		};
+		E59E229A5EE7FC6826734CD6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D9D456608EF64C5A44E13EE3 /* Pods-CommonFramework.debug.xcconfig */,
+				5103E76B212E2AB0BA4D171C /* Pods-CommonFramework.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -188,9 +215,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 29645C1E20A849780099CEAB /* Build configuration list for PBXNativeTarget "CommonFramework" */;
 			buildPhases = (
+				AB93977024BE69738638C99D /* [CP] Check Pods Manifest.lock */,
 				29645C0420A849770099CEAB /* Sources */,
 				29645C0520A849770099CEAB /* Frameworks */,
 				29645C0620A849770099CEAB /* Resources */,
+				A1724AF2CCF13DF6E4658A91 /* [CP] Embed Pods Frameworks */,
+				4DF88C5DBAF50B530D5DD42E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,11 +243,12 @@
 					29645C0720A849770099CEAB = {
 						CreatedOnToolsVersion = 9.3;
 						LastSwiftMigration = 0930;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = 29645C0320A849770099CEAB /* Build configuration list for PBXProject "CommonFramework" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -247,6 +278,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4DF88C5DBAF50B530D5DD42E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CommonFramework/Pods-CommonFramework-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1724AF2CCF13DF6E4658A91 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CommonFramework/Pods-CommonFramework-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB93977024BE69738638C99D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		29645C0420A849770099CEAB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -259,6 +338,7 @@
 				29645C0D20A849770099CEAB /* AppDelegate.m in Sources */,
 				29B0ADB120A85473003D1C0B /* UIButton+ZYXButton.m in Sources */,
 				294D71B820A91D72003214D5 /* SCAdCollectionViewLayout.m in Sources */,
+				2958767E20A923C6007FBD3D /* NetworkingTool.swift in Sources */,
 				29645C2620A84CC50099CEAB /* UIColor+ZYXColor.m in Sources */,
 				29B0ADB720A85699003D1C0B /* UIImage+ZYXImage.m in Sources */,
 			);
@@ -398,6 +478,7 @@
 		};
 		29645C1F20A849780099CEAB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9D456608EF64C5A44E13EE3 /* Pods-CommonFramework.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -406,10 +487,7 @@
 				GCC_PREFIX_HEADER = $SRCROOT/CommonFramework/PrefixHeader.pch;
 				INFOPLIST_FILE = CommonFramework/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zyx.CommonFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "CommonFramework/CommonFramework-Bridging-Header.h";
@@ -421,6 +499,7 @@
 		};
 		29645C2020A849780099CEAB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5103E76B212E2AB0BA4D171C /* Pods-CommonFramework.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -429,10 +508,7 @@
 				GCC_PREFIX_HEADER = $SRCROOT/CommonFramework/PrefixHeader.pch;
 				INFOPLIST_FILE = CommonFramework/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zyx.CommonFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "CommonFramework/CommonFramework-Bridging-Header.h";
