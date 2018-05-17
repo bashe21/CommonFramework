@@ -28,6 +28,7 @@
 		29B0ADB120A85473003D1C0B /* UIButton+ZYXButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B0ADB020A85473003D1C0B /* UIButton+ZYXButton.m */; };
 		29B0ADB420A855A7003D1C0B /* NSObject+ZYXObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B0ADB320A855A7003D1C0B /* NSObject+ZYXObject.m */; };
 		29B0ADB720A85699003D1C0B /* UIImage+ZYXImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B0ADB620A85699003D1C0B /* UIImage+ZYXImage.m */; };
+		29CB963A20ADBA5A005B88BB /* HelperCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 29CB963920ADBA5A005B88BB /* HelperCoreDataManager.m */; };
 		3D5768ECE608945B416E7BD0 /* Pods_CommonFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9591AED867AC4633B9E8A8A /* Pods_CommonFramework.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +74,8 @@
 		29B0ADB320A855A7003D1C0B /* NSObject+ZYXObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZYXObject.m"; sourceTree = "<group>"; };
 		29B0ADB520A85699003D1C0B /* UIImage+ZYXImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZYXImage.h"; sourceTree = "<group>"; };
 		29B0ADB620A85699003D1C0B /* UIImage+ZYXImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZYXImage.m"; sourceTree = "<group>"; };
+		29CB963820ADBA5A005B88BB /* HelperCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelperCoreDataManager.h; sourceTree = "<group>"; };
+		29CB963920ADBA5A005B88BB /* HelperCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelperCoreDataManager.m; sourceTree = "<group>"; };
 		5103E76B212E2AB0BA4D171C /* Pods-CommonFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-CommonFramework/Pods-CommonFramework.release.xcconfig"; sourceTree = "<group>"; };
 		D9591AED867AC4633B9E8A8A /* Pods_CommonFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9D456608EF64C5A44E13EE3 /* Pods-CommonFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CommonFramework/Pods-CommonFramework.debug.xcconfig"; sourceTree = "<group>"; };
@@ -155,6 +158,8 @@
 		294D71AF20A91C5D003214D5 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				29CB963820ADBA5A005B88BB /* HelperCoreDataManager.h */,
+				29CB963920ADBA5A005B88BB /* HelperCoreDataManager.m */,
 				2958768E20A97CB0007FBD3D /* ZYXUtility.h */,
 				2958768D20A97CB0007FBD3D /* ZYXUtility.m */,
 			);
@@ -377,6 +382,7 @@
 			files = (
 				29B0ADB420A855A7003D1C0B /* NSObject+ZYXObject.m in Sources */,
 				2958768920A97A72007FBD3D /* NetworkingTools.m in Sources */,
+				29CB963A20ADBA5A005B88BB /* HelperCoreDataManager.m in Sources */,
 				294D71B920A91D72003214D5 /* SCAdView.m in Sources */,
 				29645C1020A849770099CEAB /* ViewController.m in Sources */,
 				29645C1B20A849780099CEAB /* main.m in Sources */,
